@@ -1,10 +1,46 @@
-from app.services.contracts import apply_contract, list_contracts, run_breaking_check
+from app.services.catalog import (
+    catalog_progress,
+    create_cleaning_job,
+    evaluate_catalog,
+    evaluate_cleaning,
+    get_strategy,
+    list_cleaning_jobs,
+    list_progress_checks,
+    live_guard,
+    rebind_cleaning_job,
+    run_progress_checks,
+    set_strategy,
+    strategy_label,
+    write_cleaning,
+)
+from app.services.contracts import (
+    apply_contract,
+    cutover_state,
+    field_detail,
+    list_contracts,
+    run_breaking_check,
+)
 from app.services.reconcile import list_reports, run_reconcile
 
 __all__ = [
     "list_contracts",
     "run_breaking_check",
     "apply_contract",
+    "cutover_state",
+    "field_detail",
     "run_reconcile",
     "list_reports",
+    "live_guard",
+    "catalog_progress",
+    "list_cleaning_jobs",
+    "create_cleaning_job",
+    "rebind_cleaning_job",
+    "write_cleaning",
+    "evaluate_cleaning",
+    "evaluate_catalog",
+    "run_progress_checks",
+    "list_progress_checks",
+    "get_strategy",
+    "set_strategy",
+    "strategy_label",
 ]

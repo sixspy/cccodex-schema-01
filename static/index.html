@@ -11,17 +11,23 @@
     <header class="top">
       <div>
         <p class="eyebrow" id="lab-name">契约换版台</p>
-        <h1>表契约版本与换版</h1>
+        <h1>表契约版本与切流落库</h1>
       </div>
-      <button type="button" class="ghost" id="btn-logout">退出</button>
+      <div class="top-side">
+        <span class="chip" id="strategy-chip">切流方式 · 锁表切流</span>
+        <span class="chip" id="guard-chip">现行唯一</span>
+        <button type="button" class="ghost" id="btn-logout">退出</button>
+      </div>
     </header>
     <nav class="pills">
-      <button type="button" data-tab="contracts" class="on">契约</button>
-      <button type="button" data-tab="check">破坏性检查</button>
-      <button type="button" data-tab="apply">换版应用</button>
+      <button type="button" data-tab="contracts" class="on">契约列表</button>
+      <button type="button" data-tab="fields">字段详情</button>
+      <button type="button" data-tab="apply">换版卡片</button>
+      <button type="button" data-tab="catalog">目录进度</button>
       <button type="button" data-tab="reconcile">目录对账</button>
     </nav>
     <div class="content">
+      <div id="guard-banner" class="banner hidden"></div>
       <p class="muted" id="msg"></p>
       <div id="view"></div>
     </div>
